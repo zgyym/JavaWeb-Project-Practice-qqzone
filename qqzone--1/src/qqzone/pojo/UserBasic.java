@@ -16,6 +16,7 @@ public class UserBasic {
 
     public UserBasic(){}
 
+
     public UserBasic(Integer id) {
         this.id = id;
     }
@@ -24,9 +25,7 @@ public class UserBasic {
         return id;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+
 
     public String getLoginId() {
         return loginId;

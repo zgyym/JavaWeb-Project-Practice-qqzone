@@ -18,5 +18,6 @@
         <property name="userBasicService" ref="userBasicService"/>
         <property name="topicService" ref="topicService"/>
     </bean>
+    <bean id="page" class="myssm.myspringmvc.PageController"/>
 
 </beans>
