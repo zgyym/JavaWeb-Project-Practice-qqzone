@@ -6,7 +6,6 @@ import qqzone.pojo.UserBasic;
 import qqzone.service.TopicService;
 import qqzone.service.UserBasicService;
 
-import javax.net.ssl.HttpsURLConnection;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
