@@ -8,4 +8,6 @@ public interface ReplyService {
 
     //根据topic的id查询获取其所有的reply
     List<Reply> getReplyListByTopicId(Integer topicTId);
+    //添加回复
+    void addReply(Reply reply);
 }
