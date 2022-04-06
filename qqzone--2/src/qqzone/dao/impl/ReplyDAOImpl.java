@@ -22,4 +22,9 @@ public class ReplyDAOImpl extends BaseDAO<Reply> implements ReplyDAO {
     public void delReply(Integer id) {
         super.executeUpdate("delete from t_reply where id = ? " , id) ;
     }
+
+    @Override
+    public Reply getReplyById(Integer id) {
+        return super.load("select * from t_reply where id = ? ",id);
+    }
 }

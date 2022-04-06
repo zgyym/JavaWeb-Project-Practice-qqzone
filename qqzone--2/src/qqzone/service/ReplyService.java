@@ -1,6 +1,7 @@
 package qqzone.service;
 
 import qqzone.pojo.Reply;
+import qqzone.pojo.Topic;
 
 import java.util.List;
 
@@ -10,4 +11,8 @@ public interface ReplyService {
     List<Reply> getReplyListByTopicId(Integer topicTId);
     //添加回复
     void addReply(Reply reply);
+    //删除指定回复
+    void delReply(Integer id);
+    //删除topic关联的所有回复
+    void delReplyList(Topic topic);
 }

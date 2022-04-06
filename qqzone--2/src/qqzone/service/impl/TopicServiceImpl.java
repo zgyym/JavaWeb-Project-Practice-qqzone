@@ -1,6 +1,5 @@
 package qqzone.service.impl;
 
-import com.sun.org.apache.regexp.internal.RE;
 import qqzone.dao.TopicDAO;
 import qqzone.pojo.Reply;
 import qqzone.pojo.Topic;
@@ -38,5 +37,14 @@ public class TopicServiceImpl implements TopicService {
         topic.setAuthor(author);
 
         return topic;
+    }
+
+    @Override
+    public void delTopic(Integer id) {
+        Topic topic = topicDAO.getTopic(id);
+        if(topic != null){
+            replyService.delReplyList(topic);
+            topicDAO.delTopic(topic);
+        }
     }
 }

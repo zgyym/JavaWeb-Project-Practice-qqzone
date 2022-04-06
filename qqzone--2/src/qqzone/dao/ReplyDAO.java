@@ -13,5 +13,7 @@ public interface ReplyDAO {
     void addReply(Reply reply);
     //删除回复
     void delReply(Integer id);
+    //获取指定回复
+    Reply getReplyById(Integer id);
 
 }

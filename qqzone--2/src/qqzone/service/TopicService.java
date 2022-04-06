@@ -12,4 +12,6 @@ public interface TopicService {
     Topic getTopicById(Integer id);
     //根据id获取指定的topic信息，包括与topic关联的作者的所有信息
     Topic getTopic(Integer id);
+    //删除topic
+    void delTopic(Integer id);
 }
