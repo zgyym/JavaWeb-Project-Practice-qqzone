@@ -19,10 +19,12 @@ public class UserBasicServiceImpl implements UserBasicService {
 
     @Override
     public List<UserBasic> getFriendList(UserBasic userBasic) {
+        //userBasicList的userBasic只有id，没有其他值
         List<UserBasic> userBasicList = userBasicDAO.getUserBasicList(userBasic);
         List<UserBasic> friendList = new ArrayList<>(userBasicList.size());
         for (int i = 0; i < userBasicList.size(); i++) {
             UserBasic friend = userBasicList.get(i);
+            //根据id获取所有信息
             friend = userBasicDAO.getUserBasicById(friend.getId());
             friendList.add(friend);
         }
