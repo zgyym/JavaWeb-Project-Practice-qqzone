@@ -15,4 +15,9 @@ public class TopicServiceImpl implements TopicService {
     public List<Topic> getTopicList(UserBasic userBasic) {
         return topicDAO.getTopicList(userBasic);
     }
+
+
+
+
+
 }
